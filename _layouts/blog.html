@@ -1,0 +1,74 @@
+---
+layout: default
+---
+
+<div class="blog-container" style="display: flex; flex-wrap: nowrap; gap: 1rem;">
+  <!-- Sidebar -->
+  <aside class="blog-sidebar" style="flex: 0 0 25%; padding: 1rem; background: #f8f9fa; border-right: 1px solid #ddd;">
+    <!-- Categories -->
+    <section class="categories">
+      <h3>Categories</h3>
+      <ul>
+        {% assign categories = site.categories | sort %}
+        {% for category in categories %}
+        <li>
+          <a href="{{ site.baseurl }}/categories/{{ category[0] | slugify }}/">
+            {{ category[0] }} ({{ category[1].size }})
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <!-- Tree Navigation -->
+    <section class="tree-navigation">
+      <h3>Archives</h3>
+      <ul>
+        {% assign posts_by_year = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+        {% for year in posts_by_year %}
+        <li>
+          <strong>{{ year.name }}</strong>
+          <ul>
+            {% assign posts_by_month = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
+            {% for month in posts_by_month %}
+            <li>
+              <em>{{ month.name }}</em>
+              <ul>
+                {% for post in month.items %}
+                <li>
+                  <a href="{{ post.url }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+        {% endfor %}
+      </ul>
+    </section>
+  </aside>
+
+  <!-- Main Column -->
+  <main class="blog-main" style="flex: 1; padding: 1rem;">
+    <section class="blog-posts">
+      {% for post in paginator.posts %}
+      <article class="post">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.excerpt }}</p>
+      </article>
+      {% endfor %}
+    </section>
+
+    <!-- Pagination -->
+    <nav class="pagination">
+      {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path }}" class="prev">Previous</a>
+      {% endif %}
+      {% if paginator.next_page %}
+      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+      {% endif %}
+    </nav>
+  </main>
+</div>
