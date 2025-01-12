@@ -1,13 +1,24 @@
 theme: minima
 title: Cyril DUPONT
 description: Bookmark this to keep an eye on my project updates!
-
 author:
   name: Cyril DUPONT
   email: dupont.cyril+ghp@gmail.com
-
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
 header_pages:
   - index.md
   - about.md
   - portfolio.md
   - blog.md
+minima:
+  # Minima skin selection.
+  # Available skins are:
+  # classic	           Default, light color scheme.
+  # dark	             Dark variant of the classic skin.
+  # auto	             Adaptive skin based on the default classic and dark skins.
+  # solarized-light	   Light variant of solarized color scheme.
+  # solarized-dark	   Dark variant of solarized color scheme.
+  # solarized	         Adaptive skin for solarized color scheme skins.
+  skin: classic
