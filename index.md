@@ -10,6 +10,7 @@ I'm currently residing in Quebec.
 
 I have worked for game studios and companies as game designer, level designer, scripter or programmer.
 During 3 years, I shared my experiences and enthusiasm for video game as game design trainer at Rubika India Supinfogame.
+
 I'm currently working at <a href="https://quebec.ubisoft.com/en">Ubisoft Quebec</a> as Associate Technical Director.
 
 
