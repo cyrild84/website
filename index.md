@@ -3,7 +3,7 @@ layout: home
 title: Home
 permalink: /
 ---
-::: {home .paged .noMargin}
+::: {.paged .noMargin}
 ## Hi
 I'm a french game developer, who like to travel and explore new spaces.
 I'm currently residing in Quebec.
@@ -17,6 +17,6 @@ You can have look at my <a href="http://www.cyrildupont.fr/?page=about">resume</
 Enjoy !
 :::
 
-::: {youtube .paged .noMargin}
+::: {.paged .noMargin}
 <iframe width="774" height="435" src="https://www.youtube.com/embed/videoseries?list=PL7yJFufBf4nRZikjfhlXX-fbBURA_IVaQ&amp;autoplay=0&amp;controls=1" frameborder="0" allowfullscreen></iframe>
 :::
