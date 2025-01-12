@@ -1,6 +1,10 @@
 theme: minima
-title: Cyril DUPONT's homepage
+title: Cyril DUPONT
 description: Bookmark this to keep an eye on my project updates!
+
+author:
+  name: Cyril DUPONT
+  email: dupont.cyril+ghp@gmail.com
 
 header_pages:
   - hone.md
