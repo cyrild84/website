@@ -1,3 +1,9 @@
 theme: minima
 title: Cyril DUPONT's homepage
 description: Bookmark this to keep an eye on my project updates!
+
+header_pages:
+  - hone.md
+  - about.md
+  - portfolio.md
+  - blog.md
