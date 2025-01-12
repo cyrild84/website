@@ -16,4 +16,7 @@ I'm currently working at <a href="https://quebec.ubisoft.com/en">Ubisoft Quebec<
 You can have look at my <a href="http://www.cyrildupont.fr/?page=about">resume</a> and <a href="http://www.cyrildupont.fr/?page=portfolio">portfolio</a>.
 Enjoy !
 :::
+
+::: {youtube .paged .noMargin}
 <iframe width="774" height="435" src="https://www.youtube.com/embed/videoseries?list=PL7yJFufBf4nRZikjfhlXX-fbBURA_IVaQ&amp;autoplay=0&amp;controls=1" frameborder="0" allowfullscreen></iframe>
+:::
