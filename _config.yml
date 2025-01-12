@@ -12,6 +12,8 @@ header_pages:
   - about.md
   - portfolio.md
   - blog.md
+paginate: 5
+paginate_path: "/page:num"
 minima:
   # Minima skin selection.
   # Available skins are:
