@@ -7,7 +7,7 @@ author:
   email: dupont.cyril+ghp@gmail.com
 
 header_pages:
-  - home.md
+  - index.md
   - about.md
   - portfolio.md
   - blog.md
