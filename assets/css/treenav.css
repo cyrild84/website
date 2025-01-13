@@ -1,0 +1,27 @@
+.tree-navigation ul {
+  margin: 0;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
+.tree-navigation ul ul {
+  margin-top: 0.5rem;
+}
+
+.tree-navigation li {
+  list-style: none;
+}
+
+.tree-navigation li > ul {
+  margin-left: 1rem;
+  padding-left: 0;
+}
+
+.tree-navigation a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.tree-navigation a:hover {
+  text-decoration: underline;
+}
