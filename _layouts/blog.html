@@ -49,21 +49,11 @@ layout: default
     </section>
   </aside>
 
-  <!-- Main Column -->
-  <main class="blog-main" style="flex: 1; padding: 1rem;">
-
-<section class="blog-posts">
-  {% for post in site.posts %}
-  <article class="post">
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
-    <p>{{ post.excerpt }}</p>
-  </article>
-  {% endfor %}
-</section>
-
-    
-    <section class="blog-posts">
+<!-- Main Column -->
+<main class="blog-main" style="flex: 1; padding: 1rem;">
+  <section class="blog-posts">
+    {% if paginator.posts %}
+      <!-- Display paginated posts -->
       {% for post in paginator.posts %}
       <article class="post">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
@@ -71,16 +61,28 @@ layout: default
         <p>{{ post.excerpt }}</p>
       </article>
       {% endfor %}
-    </section>
+    {% else %}
+      <!-- Fallback to all posts if no pagination -->
+      {% for post in site.posts %}
+      <article class="post">
+        <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
+        <p>{{ post.excerpt }}</p>
+      </article>
+      {% endfor %}
+    {% endif %}
+  </section>
 
-    <!-- Pagination -->
-    <nav class="pagination">
-      {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="prev">Previous</a>
-      {% endif %}
-      {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-      {% endif %}
-    </nav>
-  </main>
+  <!-- Pagination -->
+  {% if paginator.posts and paginator.total_pages > 1 %}
+  <nav class="pagination">
+    {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="prev">Previous</a>
+    {% endif %}
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+    {% endif %}
+  </nav>
+  {% endif %}
+</main>
 </div>
