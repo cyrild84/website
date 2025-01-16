@@ -1,0 +1,19 @@
+---
+start_date: 2017-06-01
+end_date: YYY-MM-DD
+current: true
+role: Associate Technical Director
+company: Ubisoft
+company_website: 
+location: Quebec City
+country: Canada
+css_style:
+more :
+---
+- first
+- second
+- third
+### as Role (date to date)
+- first
+- second
+- third
