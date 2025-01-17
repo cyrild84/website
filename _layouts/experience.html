@@ -2,7 +2,7 @@
 layout: default
 ---
 
-{% for post in site._pages/work_experience %}
+{% for post in site.work_experience %}
       <article class="post">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
         <p class="post-date">{{ post.date | date: "%B %d, %Y" }}</p>
