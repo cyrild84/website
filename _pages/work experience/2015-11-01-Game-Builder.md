@@ -1,4 +1,5 @@
 ---
+layout: experience
 start_date: 2015-11-01
 end_date: 2017-05-01
 current: false
