@@ -18,6 +18,8 @@ paginate_path: "/blog/page:num"
 collections:
   posts:
     output: true
+  experiences:
+    output: true
 minima:
   # Minima skin selection.
   # Available skins are:
