@@ -18,4 +18,5 @@ more:
 - Creating Pipeline and Technical Solution (tools, improvements and new feature).
 - Collaborate with programming teams to achieve productions goals.
 - Create training courses and host training sessions (on-site and online).
+
 ## Immortals Fenyx Rising
