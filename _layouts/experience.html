@@ -4,7 +4,7 @@ order: 1
 ---
 
 {% assign sorted_pages = site.experiences| sort:"order" %}
-{% for experience in sorted_pages %}
+{% for experience in sorted_pages reversed %}
 <article class="experience">
   <h2>
     {{ experience.start_date | date: "%B, %Y" }} - {{experience.role}}
