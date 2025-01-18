@@ -2,6 +2,16 @@
 layout: default
 ---
 
+{% for experience in site.experiences %}
+<article class="experience">
+  <h2>
+    {{ experience.start_date | date: "%B, %Y" }} - {{experience.role}}
+  </h2>
+  <p>{{ experience.company }}, {{ experience.location }} ({{ experience.country }})</p>
+  <p>{{ post.excerpt }}</p>
+</article>
+{% endfor %}
+
 {% for post in site.experiences %}
       <article class="post">
         <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
