@@ -7,7 +7,8 @@ layout: default
     {% unless forloop.first %} </article>{% endunless %}
     <article class="company">
       <p>{{ experience.company }}</p>
-      <p>{{ experience.join_date}} </p>
+      <p>{{ experience.company }}, {{ experience.location }} ({{ experience.country }})</p>
+      <p>{{ experience.join_date | date: "%B, %Y" }}  </p>
   {% endif %}
   {% assign previous_company = experience.company %}
   <article class="experience">
@@ -16,7 +17,6 @@ layout: default
         to {{ experience.end_date | date: "%B, %Y" }}
       {% endif %}
       - {{ experience.role }}</p>
-    <p>{{ experience.company }}, {{ experience.location }} ({{ experience.country }})</p>
     <p>{{ experience.content }}</p>
   </article>
 {% endfor %}
