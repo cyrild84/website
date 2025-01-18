@@ -7,7 +7,7 @@ order: 1
 {% for experience in sorted_pages reversed %}
 <article class="experience">
   <p>{{ experience.start_date | date: "%B, %Y" }} 
-    {% if !experience.current %}
+    {% if experience.current==false %}
       to {{ experience.start_date | date: "%B, %Y" }}
     {% endif %}
     - {{experience.role}}</p>
