@@ -4,18 +4,19 @@ layout: default
 
 {% assign sorted_pages = site.experiences %}
 {% for experience in sorted_pages reversed %}
-{% if previous_role != experience.role %}
-{% if previous_role == empty %}</article> {% endif %}
-<article class="company">{{ experience.company }}
-{% endif %}
-{% assign previous_role = experience.role %}
-<article class="experience">
-  <p>{{ experience.start_date | date: "%B, %Y" }} 
-    {% if experience.current==false %}
-      to {{ experience.end_date | date: "%B, %Y" }}
-    {% endif %}
-    - {{experience.role}}</p>
-  <p>{{ experience.company }}, {{ experience.location }} ({{ experience.country }})</p>
-  <p>{{ experience.content }}</p>
-</article>
+  {% if previous_role != experience.role %}
+    {% if previous_role != empty %} </article>{% endif %} {# Close the previous company article #}
+    <article class="company">{{ experience.company }}
+  {% endif %}
+  {% assign previous_role = experience.role %}
+  <article class="experience">
+    <p>{{ experience.start_date | date: "%B, %Y" }} 
+      {% if experience.current == false %}
+        to {{ experience.end_date | date: "%B, %Y" }}
+      {% endif %}
+      - {{ experience.role }}</p>
+    <p>{{ experience.company }}, {{ experience.location }} ({{ experience.country }})</p>
+    <p>{{ experience.content }}</p>
+  </article>
 {% endfor %}
+{% if previous_role != empty %}</article>{% endif %} {# Close the last company article #}
