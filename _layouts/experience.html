@@ -1,6 +1,6 @@
 ---
 layout: default
-order: 1
+order: 0
 ---
 
 {% assign sorted_pages = site.experiences| sort:"order" %}
@@ -10,7 +10,7 @@ order: 1
     {{ experience.start_date | date: "%B, %Y" }} - {{experience.role}}
   </h2>
   <p>{{ experience.company }}, {{ experience.location }} ({{ experience.country }})</p>
-  <p>{{ post.excerpt }}</p>
+  <p>{{ experience.excerpt }}</p>
 </article>
 {% endfor %}
 
