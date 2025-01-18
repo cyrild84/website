@@ -11,7 +11,7 @@ country: Canada
 css_style: 
 more:
 ---
-## General Duties
+### General Duties
 - Design team coaching and support.
 -Technical design documentation.
 - Data management and integration.
@@ -19,4 +19,4 @@ more:
 - Collaborate with programming teams to achieve productions goals.
 - Create training courses and host training sessions (on-site and online).
 
-## Immortals Fenyx Rising
+### Immortals Fenyx Rising
