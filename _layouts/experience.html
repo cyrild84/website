@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-
 {% assign sorted_pages = site.experiences %}
 {% for experience in sorted_pages reversed %}
-  {% if previous_role != experience.role %}{{previous_role}}
-    {% if previous_role != empty %} </article>{% endif %} {# Close the previous company article #}
+  {% if forloop.first or previous_role != experience.role %}
+    {% unless forloop.first %} </article>{% endunless %} {# Close unless it's the first iteration #}
     <article class="company">{{ experience.company }}
   {% endif %}
   {% assign previous_role = experience.role %}
@@ -19,4 +18,4 @@ layout: default
     <p>{{ experience.content }}</p>
   </article>
 {% endfor %}
-{% if previous_role != empty %}</article>{% endif %} {# Close the last company article #}
+{% if previous_role != empty %}</article>{% endif %}
