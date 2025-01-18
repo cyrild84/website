@@ -13,11 +13,12 @@ layout: default
   {% endif %}
   {% assign previous_company = experience.company %}
   <article class="role">
+    <p>{{ experience.role }}</p>
     <p>{{ experience.start_date | date: "%B, %Y" }} 
       {% if experience.current == false %}
         to {{ experience.end_date | date: "%B, %Y" }}
       {% endif %}
-      - {{ experience.role }}</p>
+    </p>
     <p>{{ experience.content }}</p>
   </article>
 {% endfor %}
