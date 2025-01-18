@@ -19,7 +19,9 @@ layout: default
         to {{ experience.end_date | date: "%B, %Y" }}
       {% endif %}
     </p>
-    <p>{{ experience.content }}</p>
+    <article class="content">
+      <p>{{ experience.content }}</p>
+    </article>
   </article>
 {% endfor %}
 {% if previous_company != empty %}</article>{% endif %}
