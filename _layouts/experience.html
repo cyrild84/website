@@ -7,7 +7,7 @@ previous_role:
 {% for experience in sorted_pages reversed %}
 {% if previous_role!=experience.role %}
 {% if previous_role==false %}</article> {% endif %}
-<article class="">{{ experience.company }}
+<article class="company">{{ experience.company }}
 {% endif %}
 {% assign previous_role = experience.role %}
 <article class="experience">
