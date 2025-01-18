@@ -6,6 +6,7 @@ current: false
 role: Level Designer Quest
 company: Ubisoft
 company_website: 
+join_date: 2017-06-01
 location: Quebec City
 country: Canada
 css_style: 

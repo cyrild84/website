@@ -6,6 +6,7 @@ current: true
 role: Associate Technical Director
 company: Ubisoft
 company_website: 
+join_date: 2017-06-01
 location: Quebec City
 country: Canada
 css_style:

@@ -6,6 +6,7 @@ current: false
 role: Game Builder
 company: Quantic Dream
 company_website: 
+join_date: 2015-11-01
 location: Paris
 country: France
 css_style: 

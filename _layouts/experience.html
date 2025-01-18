@@ -5,7 +5,9 @@ layout: default
 {% for experience in sorted_pages reversed %}
   {% if forloop.first or previous_company != experience.company %}
     {% unless forloop.first %} </article>{% endunless %}
-    <article class="company"><p>{{ experience.company }}</p>
+    <article class="company">
+      <p>{{ experience.company }}</p>
+      <p>{{ experience.join_date}} </p>
   {% endif %}
   {% assign previous_company = experience.company %}
   <article class="experience">
