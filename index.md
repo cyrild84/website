@@ -19,5 +19,5 @@ Enjoy !
 
 
 
-<iframe width="740" height="416" src="https://www.youtube.com/embed/videoseries?list=PL7yJFufBf4nRZikjfhlXX-fbBURA_IVaQ&amp;autoplay=0&amp;controls=1" frameborder="0" allowfullscreen></iframe>
+<iframe width="740" height="416" src="https://www.youtube.com/embed/videoseries?list=PL7yJFufBf4nRZikjfhlXX-fbBURA_IVaQ&amp;autoplay=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
 
