@@ -4,7 +4,7 @@ title: Home
 permalink: /
 ---
 
-## Hi
+# Hi !
 I'm a french game developer, who like to travel and explore new spaces.
 I'm currently residing in Quebec.
 
